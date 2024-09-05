@@ -1,0 +1,12 @@
+# Set the default behavior to automatically normalize line endings.
+* text=auto
+
+# Ensure specific file types use LF.
+*.cs text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+
+# Ensure specific file types use CRLF (if necessary).
+*.bat text eol=crlf
+*.cmd text eol=crlf

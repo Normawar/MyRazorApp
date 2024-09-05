@@ -1,0 +1,68 @@
+@page
+@model MyRazorApp.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .register-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .text-danger {
+            color: #dc3545;
+        }
+        .btn-register {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2 class="text-center">@ViewData["Title"]</h2>
+
+        <!-- Registration Form -->
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div> <!-- Display validation errors here -->
+
+            <div class="form-group">
+                <label asp-for="Username"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span> <!-- Validation message for Username -->
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span> <!-- Validation message for Password -->
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" type="email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span> <!-- Validation message for Email -->
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-register">Register</button>
+        </form>
+    </div>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+</body>
+</html>

@@ -1,0 +1,6 @@
+C:\Users\Norma\MyRazorApp\obj\Debug\net8.0\MyRazorApp.csproj.AssemblyReference.cache
+C:\Users\Norma\MyRazorApp\obj\Debug\net8.0\MyRazorApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Norma\MyRazorApp\obj\Debug\net8.0\MyRazorApp.csproj.CoreCompileInputs.cache
+C:\Users\Norma\MyRazorApp\obj\Debug\net8.0\MyRazorApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Norma\MyRazorApp\obj\Debug\net8.0\MyRazorApp.RazorAssemblyInfo.cache
+C:\Users\Norma\MyRazorApp\obj\Debug\net8.0\MyRazorApp.RazorAssemblyInfo.cs
